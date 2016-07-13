@@ -3,12 +3,15 @@ openGL mini project.
 Based on smart homes.
 Menu-driven UI.
 Rough Code.
+
+
 /*
  * cg_proj.c
  *
  *  Created on: 19-Apr-2016
  *      Author: Prabhjot Singh
  */
+
 
 #include <stdlib.h>
 #include <GLUT/glut.h>
@@ -35,17 +38,7 @@ void *fonts[] = { GLUT_BITMAP_9_BY_15,
 /*****************************SCENE 1****************************/
 /*-------------------------------------------------------------------*/
 
-//void sky()
-//{
-//    glBegin(GL_QUADS);
-//    glColor3f(0, 0.8, 0.8);
-//    
-//    glVertex2i(1000, 300);
-//    glVertex2i(1000, 600);
-//    glVertex2i(0, 600);
-//    glVertex2i(0, 300);
-//    glEnd();
-//}
+
 void output(int x, int y, char *string, void *font)
 {
     int len, i;
@@ -175,14 +168,7 @@ void road2d()
 {
     /************** left part of road  *********/
     int x;
-//    glColor3ub(7,255,130);
-//    glBegin(GL_POLYGON);
-//    glVertex2i(0,650);
-//    glVertex2i(1000,650);
-//    glVertex2i(1000,0);
-//    glVertex2i(0,0);
-//    glEnd();
-//    
+
     glColor3ub(30,40,50);
     glBegin(GL_POLYGON);
     glVertex2i(0,420-175);
@@ -1591,26 +1577,7 @@ void sofa()
     glutSolidTorus(15,15,100,90);
     glPopMatrix();
     glColor3ub(0,0,0);
-    
-//    //ear right
-//    x6=7;
-//    y6=185;
-//    glBegin(GL_POLYGON);
-//    glColor3ub(255,191,128);
-//    glVertex2i(540-14+10-x6,494+1-200-10-y6);
-//    glVertex2i(540-14+10-x6,490+1-200+10-y6);
-//    glVertex2i(538-14+10-x6,489+1-200-10-y6);
-//    glVertex2i(538-14+10-x6,495+1-200+10-y6);
-//    glEnd();
-//    
-//    //ear left
-//    glBegin(GL_POLYGON);
-//    glColor3ub(255,191,128);
-//    glVertex2i(554+20,495-200);
-//    glVertex2i(556+20,496-200);
-//    glVertex2i(556+20,491-200);
-//    glVertex2i(554+20,490-200);
-//    glEnd();
+
     
     //remote
     x6=-10;
@@ -2637,10 +2604,6 @@ int main(int argc, char **argv)
     glutMouseFunc(mouse);
    	glutSpecialFunc( SpecialKeyFunc );
     glutKeyboardFunc(keys);
-
-   // glutReshapeFunc(myreshape);
-   
-
     
    	glutMainLoop();
     return 1;
